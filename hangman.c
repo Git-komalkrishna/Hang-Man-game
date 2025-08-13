@@ -5,7 +5,21 @@
 #include<ctype.h>
 #include<string.h>
 int main()
-{
+{  const char *watermark = 
+        " _    _          _   _  _____ __  __          _   _ \n"
+        "| |  | |   /\\   | \\ | |/ ____|  \\/  |   /\\   | \\ | |\n"
+        "| |__| |  /  \\  |  \\| | |  __| \\  / |  /  \\  |  \\| |\n"
+        "|  __  | / /\\ \\ | . ` | | |_ | |\\/| | / /\\ \\ | . ` |\n"
+        "| |  | |/ ____ \\| |\\  | |__| | |  | |/ ____ \\| |\\  |\n"
+        "|_|  |_/_/    \\_\\_| \\_|\\_____|_|  |_/_/    \\_\\_| \\_|\n"
+
+        "\n \n"
+        "      Created by: komal \n"
+        "      GitHub: github.com/irumos\n"
+        "      Project: Hangman Game in C\n";
+
+    printf("%s\n", watermark);
+
     char words[][150] = { // words for game is selected from this list randomly
         "apple", "banana", "cherry", "date", "elderberry",
         "fig", "grape", "honeydew", "kiwi", "lemon",
